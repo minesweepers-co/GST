@@ -13,6 +13,10 @@ namespace GST.DataObjects
         public Purchase(string lineData)
         {
             String[] data = lineData.Split(',');
+            if(data.Length < 24)
+            {
+                return;
+            }
             date = data[0];
             party = data[1];
             vchType = data[2];
