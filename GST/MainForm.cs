@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GST.DataObjects;
+using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,10 +30,19 @@ namespace GST
             openFileDialog.Filter = "txt files(*.txt) | *.txt";
             openFileDialog.FilterIndex = 2;
             openFileDialog.RestoreDirectory = true;
-
+            ArrayList purchases = new ArrayList();
             if (openFileDialog.ShowDialog() == DialogResult.OK) {
                 string fileName = openFileDialog.FileName;
-                Console.WriteLine("FileName = " + fileName);
+                string line;
+
+                System.IO.StreamReader file =new System.IO.StreamReader(fileName);
+                while ((line = file.ReadLine()) != null)
+                {
+                    purchases.Add(new Purchase(line));
+                }
+
+                file.Close();
+                // do something with purchases
             }
         }
     }
