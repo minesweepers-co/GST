@@ -33,9 +33,10 @@
             // 
             // ButtonInput
             // 
-            this.ButtonInput.Location = new System.Drawing.Point(356, 353);
+            this.ButtonInput.Location = new System.Drawing.Point(144, 138);
+            this.ButtonInput.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.ButtonInput.Name = "ButtonInput";
-            this.ButtonInput.Size = new System.Drawing.Size(173, 78);
+            this.ButtonInput.Size = new System.Drawing.Size(65, 33);
             this.ButtonInput.TabIndex = 0;
             this.ButtonInput.Text = "Input File";
             this.ButtonInput.UseVisualStyleBackColor = true;
@@ -43,10 +44,11 @@
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1010, 799);
+            this.ClientSize = new System.Drawing.Size(379, 314);
             this.Controls.Add(this.ButtonInput);
+            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.Name = "MainForm";
             this.Text = "GST";
             this.Load += new System.EventHandler(this.Form1_Load);
