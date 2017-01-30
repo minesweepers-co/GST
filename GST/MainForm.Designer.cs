@@ -29,26 +29,38 @@
         private void InitializeComponent()
         {
             this.ButtonInput = new System.Windows.Forms.Button();
+            this.GenerateExcel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ButtonInput
             // 
-            this.ButtonInput.Location = new System.Drawing.Point(144, 138);
-            this.ButtonInput.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.ButtonInput.Location = new System.Drawing.Point(379, 154);
+            this.ButtonInput.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ButtonInput.Name = "ButtonInput";
-            this.ButtonInput.Size = new System.Drawing.Size(65, 33);
+            this.ButtonInput.Size = new System.Drawing.Size(173, 79);
             this.ButtonInput.TabIndex = 0;
             this.ButtonInput.Text = "Input File";
             this.ButtonInput.UseVisualStyleBackColor = true;
             this.ButtonInput.Click += new System.EventHandler(this.ButtonInput_Click);
             // 
+            // GenerateExcel
+            // 
+            this.GenerateExcel.Location = new System.Drawing.Point(379, 463);
+            this.GenerateExcel.Name = "GenerateExcel";
+            this.GenerateExcel.Size = new System.Drawing.Size(173, 79);
+            this.GenerateExcel.TabIndex = 1;
+            this.GenerateExcel.Text = "Generate Excel";
+            this.GenerateExcel.UseVisualStyleBackColor = true;
+            this.GenerateExcel.Click += new System.EventHandler(this.GenerateExcel_Click);
+            // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(379, 314);
+            this.ClientSize = new System.Drawing.Size(1011, 749);
+            this.Controls.Add(this.GenerateExcel);
             this.Controls.Add(this.ButtonInput);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MainForm";
             this.Text = "GST";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -59,6 +71,7 @@
         #endregion
 
         private System.Windows.Forms.Button ButtonInput;
+        private System.Windows.Forms.Button GenerateExcel;
     }
 }
 
