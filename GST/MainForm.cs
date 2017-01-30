@@ -53,7 +53,7 @@ namespace GST
                 if (string.IsNullOrEmpty(folderPath)) {
                     return;
                 }
-
+                folderPath = folderPath.TrimEnd('\\') + '\\';   // this gurantees we hande drives , directories properly
                 MakeExcel(folderPath + "dummy.xlsx");
             }
         }
